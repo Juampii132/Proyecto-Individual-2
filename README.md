@@ -17,6 +17,14 @@ Este repositorio contiene el Dashboard desarrollado en Power BI Desktop para el 
 - Identificar oportunidades de despliegue y mejora en provincias menos saturadas.
 
 # 🗂️ Estructura del repositorio
+
+Proyecto-Individual-2/
+├── data/
+│   ├── Internet.xlsx         # Archivo de datos original con varias hojas
+├── pbix/
+│   └── Proyecto Integrador 2.pbix   # Archivo de Power BI (modelo + visualizaciones)
+└── README.md                 # Documentación (este archivo)
+
 **`EDA:`**
 Importe las librerías Pandas, Matplotlib y Seaborn. Del Excel importé las hojas elegidas, use la función .head() para verificar que todo ande bien, y la función .info() para traer información general. Revisé valores Nulos y los encontré en la tabla de Dial Up en la columna homónima, sin embargo no fue necesario tratarlos ya que eran datos que no iban a complicar el análisis ni el dashboard. En Accesos por Tecnología se marcaban como nulos unos valores que correspoden a una nota dejada en el Excel la cuál no tiene valor por lo cuál eliminé esas últimas dos filas. Use la función .describe() para obtener más información de las tablas. Usé un Boxplot para verificar si hay outliers en la tabla de Totales Accesos por Tecnología. Para las demás tablas, los datos traídos del AMBA resaltaban demasiado, por lo cuál decidi no buscar outliers ahí ya que la disparidad entre el Capital y Provinica de Buenos Aires, y las demás provincias es demasiada. Lo que sí, revise que porcentaje del total de Accesos de Banda Ancha y Dial Up provenían del AMBA, donde pudimos ver que la mitad se concentran en esta zona. Luego, verifique la distribución del uso de las diferentes tecnologías analizando la tabla "Totales Accesos por Tecnología" con la información del último trimestre. Luego, hicimos un gráfico de lineas que nos permitia ver la evolución del uso de las diferentes tecnologías a traves del tiempo. Y por último otro gráfico de lineas que nos permitio ver la evolución de la penetración cada 100 hogares por Provincia a traves del tiempo. Y la conclusión.
 
